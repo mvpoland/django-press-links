@@ -7,5 +7,12 @@
 {% block content_body %}
     <div class="blog-post-body">
         {{ object.excerpt|safe }}
+        {% if object.link_set.count %}
+        <ul>
+            {% for link in object.link_set.all %}
+            <li><a href="{{ link.link }}">{{ link.link_text }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endif %}
     </div>
 {% endblock %}

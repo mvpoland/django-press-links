@@ -2,10 +2,9 @@ import datetime
 
 from django.conf import settings
 from django.contrib.sites.models import Site
-from django.contrib import messages
 from django.http import Http404
+from django.shortcuts import get_object_or_404
 from django.utils.translation import ugettext as _
-from django.db.models import Count
 
 from press_links.models import Entry
 from press_links.enums import DRAFT_STATUS, HIDDEN_STATUS, LIVE_STATUS, MONTH_NAMES
@@ -21,7 +20,7 @@ def entries(request):
     """
 
     return {
-        'object_list': Entry.objects.live(),
+        'object_list': paginate(request, Entry.objects.live()),
     }
 
 

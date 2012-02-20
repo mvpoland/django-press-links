@@ -1,5 +1,8 @@
 from django.contrib import admin
-from press_links.models import Entry
+from press_links.models import Entry, Link
+
+class LinkInline(admin.StackedInline):
+    model = Link
 
 class EntryAdmin(admin.ModelAdmin):
     model = Entry
@@ -9,6 +12,7 @@ class EntryAdmin(admin.ModelAdmin):
     list_filter = ('site', 'status',)
     prepopulated_fields = {'slug': ('title',)}
     search_fields = ('title', 'excerpt',)
+    inlines = [LinkInline]
 
 admin.site.register(Entry, EntryAdmin)
 
