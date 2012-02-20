@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
-import press-links
+import press_links
 
 
 setup(
     name="django-press-links",
-    version=press-links.__version__,
+    version=press_links.__version__,
     url='https://github.com/citylive/django-press-links',
     license='BSD',
     description="Press app",

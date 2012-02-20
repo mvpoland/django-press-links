@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block page_title %}{% trans "Press" %} - {{ block.super }}{% endblock %}
+{% block title %}{% trans "Press" %}{% endblock %}
+
+{% block content_body %}
+    {% for object in object_list %}
+        <div class="blogpost">
+            <h2>{% if object.pub_date %}<span class="pub_date">{{ object.pub_date|date:"d M" }}</span> {% endif %}</h2>
+            <p>{{ object.excerpt|safe }}</p>
+        </div>
+        {% if not forloop.last %}
+            <div class="hr">
+                <hr/>
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
