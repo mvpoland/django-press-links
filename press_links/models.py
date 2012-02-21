@@ -36,8 +36,8 @@ class Entry(models.Model):
     class Meta:
         get_latest_by = 'pub_date'
         ordering = ['-pub_date']
-        verbose_name = _('Entry')
-        verbose_name_plural = _('Entries')
+        verbose_name = _('Press Entry')
+        verbose_name_plural = _('Press Entries')
 
     def __unicode__(self):
         return self.title
@@ -46,3 +46,7 @@ class Link(models.Model):
     link = models.CharField(max_length=255, verbose_name=_('link address'))
     link_text = models.CharField(max_length=255, verbose_name=_('text for link'))
     entry = models.ForeignKey(Entry, verbose_name=_('Entry'))
+
+    class Meta:
+        verbose_name = _('Press Link')
+        verbose_name_plural = _('Press Links')
