@@ -12,8 +12,7 @@
         {% for object in object_list.object_list %}
             <div class="press_links blogpost">
                 <h2>{{ object.title }}</h2>
-                <span class="pub_date small">{{ object.pub_date|date:"d-m-Y" }}</span>
-                {% if object.source %}<br /><span class="pub_date small">{{ object.source }}</span>{% endif %}
+                <span class="pub_date small">{{ object.pub_date|date:"d-m-Y" }}{% if object.source %} - {{ object.source }}{% endif %}</span>
                 <p>{{ object.excerpt|safe }}</p>
                 {% if object.link_set.count %}
                 <ul>

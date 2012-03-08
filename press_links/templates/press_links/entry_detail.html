@@ -2,12 +2,12 @@
 {% load i18n %}
 
 {% block page_title %}{{ object.title }} - {% trans "Press" %} - {{ block.super }}{% endblock %}
-{% block title %}<span class="blog-title-date">{{ object.pub_date|date:"d-m-Y" }}</span> - {{ object.title }}{% endblock %}
+{% block title %}{{ object.title }}{% endblock %}
 {% block menu_press %}selected{% endblock %}
 
 {% block content_body %}
     <div class="blog-post-body">
-        {% if object.source %}<br /><span class="pub_date small">{{ object.source }}</span>{% endif %}
+        <p class="pub_date small margin_bottom">{{ object.pub_date|date:"d-m-Y" }}{% if object.source %} - {{ object.source }}{% endif %}</p>
         {{ object.excerpt|safe }}
         {% if object.link_set.count %}
         <ul>
