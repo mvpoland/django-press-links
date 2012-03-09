@@ -5,6 +5,10 @@
 {% block title %}{{ object.title }}{% endblock %}
 {% block menu_press %}selected{% endblock %}
 
+{% block extra_head %}
+<meta property="og:description" content="{{ object.excerpt }}">
+{% endblock %}
+
 {% block content_body %}
     <div class="blog-post-body">
         <p class="pub_date small margin_bottom">{{ object.pub_date|date:"d-m-Y" }}{% if object.source %} - {{ object.source }}{% endif %}</p>
