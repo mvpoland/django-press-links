@@ -44,6 +44,7 @@ class Entry(models.Model):
 class Link(models.Model):
     link = models.CharField(max_length=255, verbose_name=_('link address'))
     link_text = models.CharField(max_length=255, verbose_name=_('text for link'))
+    link_new_page = models.BooleanField(default=False, verbose_name=_('open link in new page'))
     entry = models.ForeignKey(Entry, verbose_name=_('Entry'))
 
     class Meta:
