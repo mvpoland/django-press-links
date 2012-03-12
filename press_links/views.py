@@ -21,6 +21,7 @@ def entries(request):
 
     return {
         'object_list': paginate(request, Entry.objects.live()),
+        'site_url': Site.objects.get_current().domain,
     }
 
 
