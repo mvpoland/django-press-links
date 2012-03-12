@@ -34,7 +34,9 @@
                 <a class="addthis_button_compact"></a>
                 <a class="addthis_counter addthis_bubble_style"></a>
                 </div>
-                <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=citylive"></script>
+                <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=citylive">
+                    var addthis_share = { url: "{% url press_links_entry_detail slug=object.slug %}"};
+                </script>
                 <!-- AddThis Button END -->
             </div>
             {% if not forloop.last %}
