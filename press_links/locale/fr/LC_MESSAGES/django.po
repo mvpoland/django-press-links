@@ -3,20 +3,20 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-21 15:06+0200\n"
+"POT-Creation-Date: 2013-08-21 17:31+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: enums.py:7
+#: enums.py:8
 msgid "Live"
 msgstr "En direct"
 
-#: enums.py:8
+#: enums.py:9
 msgid "Draft"
 msgstr "Esquisse"
 
-#: enums.py:9
+#: enums.py:10
 msgid "Hidden"
 msgstr "Masqué"
 
