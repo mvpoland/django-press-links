@@ -2,6 +2,8 @@
 #, fuzzy
 msgid ""
 msgstr ""
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-21 15:06+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,54 +19,6 @@ msgstr "Esquisse"
 #: enums.py:9
 msgid "Hidden"
 msgstr "Masqué"
-
-#: enums.py:12
-msgid "January"
-msgstr "Janvier"
-
-#: enums.py:12
-msgid "Feburary"
-msgstr "Février"
-
-#: enums.py:12
-msgid "March"
-msgstr "Mars"
-
-#: enums.py:12
-msgid "April"
-msgstr "Avril"
-
-#: enums.py:12
-msgid "May"
-msgstr "Mai"
-
-#: enums.py:12
-msgid "June"
-msgstr "Juin"
-
-#: enums.py:12
-msgid "July"
-msgstr "Juillet"
-
-#: enums.py:12
-msgid "August"
-msgstr "Août"
-
-#: enums.py:12
-msgid "September"
-msgstr "Septembre"
-
-#: enums.py:12
-msgid "October"
-msgstr "Octobre"
-
-#: enums.py:12
-msgid "November"
-msgstr "Novembre"
-
-#: enums.py:12
-msgid "December"
-msgstr "Décembre"
 
 #: models.py:20
 msgid "author"
@@ -103,32 +57,79 @@ msgid "Press Entries"
 msgstr "Articles Presse"
 
 #: models.py:45
-msgid "link address"
-msgstr "adresse du lien"
+msgid "link address (add http:// for external link)"
+msgstr ""
 
 #: models.py:46
 msgid "text for link"
 msgstr "texte pour le lien"
 
 #: models.py:47
+msgid "open link in new page"
+msgstr ""
+
+#: models.py:48
 msgid "Entry"
 msgstr "Entrée"
 
-#: models.py:50
+#: models.py:51
 msgid "Press Link"
 msgstr "Lien Presse"
 
-#: models.py:51
+#: models.py:52
 msgid "Press Links"
 msgstr "Liens Presse"
 
 #: templates/press_links/entry_detail.html:4
-#: templates/press_links/entry_list.html:4
-#: templates/press_links/entry_list.html:5
+#: templates/press_links/entry_list.html:8
+#: templates/press_links/entry_list.html:9
 msgid "Press"
 msgstr "Presse"
 
-#: templates/press_links/entry_list.html:10
-msgid "This page gives you an overview of our Mobile Vikings press releases, as well as the latest press articles related to Mobile Vikings."
-msgstr "Cette page offre un survol de nos communiqués de presse, ainsi que les derniers articles de presse concernant Mobile Vikings."
+#: templates/press_links/entry_list.html:5
+#: templates/press_links/entry_list.html:14
+msgid ""
+"This page gives you an overview of our Mobile Vikings press releases, as "
+"well as the latest press articles related to Mobile Vikings."
+msgstr ""
+"Cette page offre un survol de nos communiqués de presse, ainsi que les "
+"derniers articles de presse concernant Mobile Vikings."
 
+#~ msgid "January"
+#~ msgstr "Janvier"
+
+#~ msgid "Feburary"
+#~ msgstr "Février"
+
+#~ msgid "March"
+#~ msgstr "Mars"
+
+#~ msgid "April"
+#~ msgstr "Avril"
+
+#~ msgid "May"
+#~ msgstr "Mai"
+
+#~ msgid "June"
+#~ msgstr "Juin"
+
+#~ msgid "July"
+#~ msgstr "Juillet"
+
+#~ msgid "August"
+#~ msgstr "Août"
+
+#~ msgid "September"
+#~ msgstr "Septembre"
+
+#~ msgid "October"
+#~ msgstr "Octobre"
+
+#~ msgid "November"
+#~ msgstr "Novembre"
+
+#~ msgid "December"
+#~ msgstr "Décembre"
+
+#~ msgid "link address"
+#~ msgstr "adresse du lien"
