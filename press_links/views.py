@@ -7,7 +7,7 @@ from django.shortcuts import get_object_or_404
 from django.utils.translation import ugettext as _
 
 from press_links.models import Entry
-from press_links.enums import DRAFT_STATUS, HIDDEN_STATUS, LIVE_STATUS, MONTH_NAMES
+from press_links.enums import DRAFT_STATUS, HIDDEN_STATUS
 
 from templatable_view import templatable_view
 from django_ajax.pagination import paginate
