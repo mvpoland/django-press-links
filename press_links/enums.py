@@ -8,6 +8,3 @@ STATUS_CHOICES = (
     (DRAFT_STATUS, _('Draft')),
     (HIDDEN_STATUS, _('Hidden')),
 )
-
-MONTH_NAMES = ('', _('January'), _('Feburary'), _('March'), _('April'), _('May'), _('June'), _('July'), _('August'), _('September'), _('October'), _('November'), _('December'))
-

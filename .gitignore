@@ -17,6 +17,7 @@ pip-log.txt
 # Unit test / coverage reports
 .coverage
 .tox
+
 #########
 ## Django
 #########
@@ -24,6 +25,7 @@ pip-log.txt
 *.pot
 local_settings.py
 settings_local.py
+
 ##########
 ## Eclipse
 ##########
@@ -44,3 +46,8 @@ local.properties
 
 # CDT-specific
 .cproject
+
+##################
+# PyCharm settings
+##################
+.idea/*
