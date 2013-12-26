@@ -17,7 +17,7 @@
             <div class="press_links blogpost">
                 <h2>{{ object.title }}</h2>
                 <span class="pub_date small">{{ object.pub_date|date:"d-m-Y" }}{% if object.source %} - {{ object.source }}{% endif %}</span>
-                <p>{{ object.excerpt|safe }}</p>
+                <p>{{ object.excerpt|markdown|linebreaksbr }}</p>
                 {% if object.link_set.count %}
                 <ul>
                     {% for link in object.link_set.all %}
