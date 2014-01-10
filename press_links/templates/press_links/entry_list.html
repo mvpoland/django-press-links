@@ -1,4 +1,7 @@
 {% extends "base.html" %}
+
+{% load url from future %}
+
 {% load i18n pagination %}
 
 {% block extra_head %}
@@ -26,7 +29,7 @@
                 </ul>
                 {% endif %}
                 <!-- AddThis Button BEGIN -->
-                <div class="addthis_toolbox addthis_default_style " addthis:url="https://{{ site_url }}{% url press_links_entry_detail slug=object.slug %}" addthis:title="{{ object.title }}">
+                <div class="addthis_toolbox addthis_default_style " addthis:url="https://{{ site_url }}{% url 'press_links_entry_detail' slug=object.slug %}" addthis:title="{{ object.title }}">
                 <a href="#" class="addthis_button_preferred_1"></a>
                 <a href="#" class="addthis_button_preferred_2"></a>
                 <a href="#" class="addthis_button_preferred_3"></a>
