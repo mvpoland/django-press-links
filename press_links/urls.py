@@ -1,4 +1,4 @@
-from django.conf.urls.defaults import *
+from django.conf.urls import *
 
 from press_links.models import Entry
 from press_links.views import entries, entry
