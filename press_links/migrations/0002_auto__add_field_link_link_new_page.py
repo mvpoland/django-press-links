@@ -5,15 +5,19 @@ from south.v2 import SchemaMigration
 from django.db import models
 
 class Migration(SchemaMigration):
+    needed_by = (
+            ('datatrans', '0004_add_object_links'),
+    )
+
 
     def forwards(self, orm):
-        
+
         # Adding field 'Link.link_new_page'
         db.add_column('press_links_link', 'link_new_page', self.gf('django.db.models.fields.BooleanField')(default=False), keep_default=False)
 
 
     def backwards(self, orm):
-        
+
         # Deleting field 'Link.link_new_page'
         db.delete_column('press_links_link', 'link_new_page')
 
