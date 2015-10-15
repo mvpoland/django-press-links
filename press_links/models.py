@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.conf import settings
 from django.contrib.sites.models import Site
 from django.utils.translation import ugettext_lazy as _
 from press_links.enums import STATUS_CHOICES, LIVE_STATUS, DRAFT_STATUS
@@ -17,7 +17,9 @@ class EntryManager(models.Manager):
 
 
 class Entry(models.Model):
-    author = models.ForeignKey(User, verbose_name=_('author'), related_name='%(app_label)s_%(class)s_related')
+    author = models.ForeignKey(settings.AUTH_USER_MODEL,
+                               verbose_name=_('author'),
+                               related_name='%(app_label)s_%(class)s_related')
     title = models.CharField(max_length=255, verbose_name=_('title'))
     slug = models.SlugField(max_length=255, unique_for_date='pub_date', verbose_name='slug')
     pub_date = models.DateTimeField(default=datetime.now, verbose_name=_('publication date'))
