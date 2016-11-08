@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import press_links
 
 dependency_links = [
-    'git+ssh://git@github.com/mvpoland/django-templatable-view.git@1.2.0#egg=django_templatable_view-1.2.0'
+    'git+ssh://git@github.com/mvpoland/django-templatable-view.git@1.2.0#egg=django_templatable_view'
 ]
 
 setup(
