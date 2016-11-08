@@ -1,6 +1,9 @@
 from setuptools import setup, find_packages
 import press_links
 
+dependency_links = [
+    'git+ssh://git@github.com/mvpoland/django-templatable-view.git@1.2.0#egg=django_templatable_view-1.2.0'
+]
 
 setup(
     name="django-press-links",
@@ -11,7 +14,7 @@ setup(
     long_description=open('README.rst', 'r').read(),
     author='City Live nv',
     packages=find_packages('.'),
-    install_requires=["django-tinymce==1.5.3"],
+    install_requires=['django-tinymce==1.5.3', 'django_templatable_view'],
     classifiers=[
         'Intended Audience :: Developers',
         'Programming Language :: Python',
@@ -19,4 +22,5 @@ setup(
         'Environment :: Web Environment',
         'Framework :: Django',
     ],
+    dependency_links=dependency_links,
 )
