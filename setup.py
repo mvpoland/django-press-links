@@ -1,10 +1,6 @@
 from setuptools import setup, find_packages
 import press_links
 
-dependency_links = [
-    'git+ssh://git@github.com/mvpoland/django-templatable-view.git@1.2.0#egg=django_templatable_view'
-]
-
 setup(
     name="django-press-links",
     version=press_links.__version__,
@@ -22,5 +18,4 @@ setup(
         'Environment :: Web Environment',
         'Framework :: Django',
     ],
-    dependency_links=dependency_links,
 )
