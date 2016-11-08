@@ -10,7 +10,7 @@ setup(
     long_description=open('README.rst', 'r').read(),
     author='City Live nv',
     packages=find_packages('.'),
-    install_requires=['django-tinymce==1.5.3', 'django_templatable_view'],
+    install_requires=['django-tinymce==1.5.3'],
     classifiers=[
         'Intended Audience :: Developers',
         'Programming Language :: Python',
